@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Button } from '@headlessui/react'
 
 const LandingPage = () => {
   const [showBanner, setShowBanner] = useState(false);
@@ -36,23 +37,22 @@ const LandingPage = () => {
             {/* Main Heading */}
             <div className="mb-8 mt-8">
               <h1 className="text-2xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
-                <span className="bg-indigo to-teal bg-clip-text text-transparent">
-                  Powered by AI
+                <span className="bg-teal bg-clip-text text-transparent ps-px">
+                  Upload your M-Pesa statement and get instant credit assessment powered by AI.
                 </span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-                Upload your M-Pesa statement and get instant credit assessment powered by AI.
-                No forms, no waiting - only financial insights.
+                No forms, no waiting - only financial insights. 
               </p>
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+            <div className="rounded bg-sky-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500">
               <Link
                 to="/upload"
-                className="group relative bg-gradient-to-r from-indigo to-teal text-white font-semibold text-lg px-8 py-4 rounded-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+                className="group relative bg-coral text-white font-semibold text-lg px-8 py-4 rounded-none hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
               >
-                <span className="relative z-10 flex items-center">
+                <span className="rounded bg-sky-600 px-4 py-2 text-sm text-white data-active:bg-sky-700 data-hover:bg-sky-500">
                   Analyze Your M-Pesa
                   <svg className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
@@ -62,7 +62,7 @@ const LandingPage = () => {
 
               <Link
                 to="/history"
-                className="group bg-white/80 backdrop-blur-sm border border-gray-200 text-gray-700 font-semibold text-lg px-8 py-4 rounded-xl hover:shadow-lg transition-all duration-300 hover:border-indigo/30"
+                className="group relative bg-indigo text-white font-semibold text-lg px-8 py-4 rounded-none hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
               >
                 View Analysis History
               </Link>
