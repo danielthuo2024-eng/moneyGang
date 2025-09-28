@@ -15,12 +15,11 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-indigo to-teal rounded-lg"></div>
-            <span className="text-xl font-bold text-indigo">M-Pesa AI Analyzer</span>
+            <span className="text-xl font-bold text-indigo">moneyGPT</span>
           </Link>
           
           <nav>
-            <ul className="flex space-x-6">
+            <ul className="flex space-x-6 list-none">
               {navItems.map((item) => (
                 <li key={item.path}>
                   <Link
